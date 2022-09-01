@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(77, 128, 156);
+
+  .loginWindow {
+    width: 400px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+
+    .loggedIn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      height: 200px;
+    }
+
+    .routes {
+      display: flex;
+      height: 50px;
+      width: 100%;
+      border-bottom: 1px solid black;
+
+      .login,
+      .createAccount {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+      }
+
+      .active {
+        border-bottom: 2px solid black;
+        font-weight: 600;
+      }
+    }
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 10px;
+
+      button {
+        margin-top: 10px;
+      }
+    }
+
+  }
+}
